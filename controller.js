@@ -10,3 +10,11 @@ const limparFormulario = (endereco) => {
     document .getElementById('cidade').value = '';
     document .getElementById('estado').value = '';
 }
+
+//Fincao para preencher os campos de endereco
+const preencherFormulario = (endereco) => {
+    document .getElementById('rua').value = endereco.logradouro;
+    document .getElementById('bairro').value = endereco.bairro;
+    document .getElementById('cidade').value = endereco.localidade;
+    document .getElementById('estado').value = endereco.uf;
+}
